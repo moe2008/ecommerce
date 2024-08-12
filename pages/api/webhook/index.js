@@ -4,7 +4,7 @@ import Stripe from "stripe";
 import { setDoc, doc } from "firebase/firestore";
 
 const stripe = new Stripe(
-  "sk_test_51Mdx53CkH5xVlljvvtsSicuuox1kxs5RmX7ugtD2E2tpo5rGyDBvElaR5CYP2421AJXg3MAoXzPZfiZbrRdeuPof00gYFf7iAM"
+  process.env.NEXT_PUBLIC_STRIPE_API_KEY
 );
 
 export const config = {

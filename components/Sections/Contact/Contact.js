@@ -37,7 +37,7 @@ const Contact = React.forwardRef((props, ref) => {
       >
         <Flex marginTop="5">
           <Heading fontSize="3xl" color="#f3f3f3">
-            Kontakt
+            Contact
           </Heading>
         </Flex>
         <Flex
@@ -63,7 +63,7 @@ const Contact = React.forwardRef((props, ref) => {
               }}
             >
               <Input
-                placeholder="Vorname"
+                placeholder="First Name"
                 width="70%"
                 height="2rem"
                 type="text"
@@ -73,7 +73,7 @@ const Contact = React.forwardRef((props, ref) => {
                 onChange={handleInputChange}
               />
               <Input
-                placeholder="Nachname"
+                placeholder="Last Name"
                 width="70%"
                 height="2rem"
                 type="text"
@@ -83,7 +83,7 @@ const Contact = React.forwardRef((props, ref) => {
                 onChange={handleInputChange}
               />
               <Input
-                placeholder="Email Adresse"
+                placeholder="Email"
                 width="70%"
                 height="2rem"
                 type="email"
@@ -93,7 +93,7 @@ const Contact = React.forwardRef((props, ref) => {
                 onChange={handleInputChange}
               />
               <Textarea
-                placeholder="Nachricht"
+                placeholder="Message"
                 resize="none"
                 type="text"
                 className={classes.text}
@@ -108,7 +108,7 @@ const Contact = React.forwardRef((props, ref) => {
                 backgroundColor="#867872"
                 _hover={{ backgroundColor: "#726661" }}
               >
-                Senden
+                Send
               </Button>
             </form>
           </Flex>
@@ -116,19 +116,25 @@ const Contact = React.forwardRef((props, ref) => {
             w={["70%", "70%", "50%"]}
             justifyContent="flex-start"
             alignItems={"center"}
+            textAlign="start"
             flexDirection="column"
             gap="3"
             marginTop={["5", "5", "0", "0"]}
+            padding="5"
           >
             <Heading color="#F3F3F3" fontSize="xl" marginBottom="5">
               Impressum
             </Heading>
-            <Text className={classes.text}>Dierker Parkett</Text>
-            <Text className={classes.text}>Inhaber Martin Dierker</Text>
-            <Text className={classes.text}>Lerchenstraße 34</Text>
-            <Text className={classes.text}>49577 Kettenkamp</Text>
-            <Text className={classes.text}>dierker.parkett@osnanet.de</Text>
-            <Text className={classes.text}>05436/1020</Text>
+            <Text className={classes.text}>GlanzPro GmbH</Text>
+            <Text className={classes.text}>Geschäftsführer: Lisa Müller</Text>
+            <Text className={classes.text}>Hauptstraße 56</Text>
+            <Text className={classes.text}>10178 Berlin</Text>
+            <Text className={classes.text}>kontakt@glanzpro.de</Text>
+            <Text className={classes.text}>030/12345678</Text>
+            <Text className={classes.text}>USt-IdNr.: DE123456789</Text>
+            <Text className={classes.text}>Handelsregister: HRB 987654</Text>
+            <Text className={classes.text}>Amtsgericht Berlin-Charlottenburg</Text>
+
           </Flex>
         </Flex>
       </Flex>

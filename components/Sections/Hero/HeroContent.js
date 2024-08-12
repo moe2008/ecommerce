@@ -1,13 +1,17 @@
 import { Flex, Heading, Text, Button } from "@chakra-ui/react";
 import React from "react";
-import muster from "../../../public/ad.png";
+import muster2 from "../../../Bottle7.png"
 import classes from "./HeroContent.module.css";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
+import { useRouter } from "next/router";
+
+
 const HeroContent = (props) => {
   const controlsLeft = useAnimation();
   const controlsRight = useAnimation();
+  const router = useRouter()
 
   useEffect(() => {
     controlsLeft.start({ opacity: [0, 1], x: [-100, 0] });
@@ -53,7 +57,7 @@ const HeroContent = (props) => {
             className={classes.text}
             fontFamily={"open sans"}
           >
-            Parkett, Laminat und Co
+            FloorGleam
           </Heading>
         </Flex>
         <Flex
@@ -67,21 +71,18 @@ const HeroContent = (props) => {
             marginBottom="5"
             className={classes.text}
           >
-            Willkommen bei Dierker Parkett, Ihrem Experten für erstklassige
-            Parkettböden. Wir sind stolz darauf, eine große Auswahl an
-            hochwertigen Parkettböden in verschiedenen Designs und für
-            verschiedene Nutzungen anzubieten.
+            Keep your floors looking their best with FloorGleam. This versatile cleaner and conditioner is designed for all types of flooring, from hardwood to laminate and tiles. It gently cleans while adding a protective layer that enhances shine and guards against wear and scratches.
           </Text>
           <Button
             marginTop="0.5em"
             size={["md", "md", "sm", "md"]}
             className={classes.text}
-            backgroundColor="#867872"
+            backgroundColor="#DFBF95"
             fontFamily={"open sans"}
-            _hover={{ backgroundColor: "#726661" }}
-            onClick={() => props.onClickScroll(3)}
+            _hover={{ backgroundColor: "#DFBF91" }}
+            onClick={() => router.push("/shop")}
           >
-            Mehr erfahren
+            Visit Shop
           </Button>
         </Flex>
       </Flex>
@@ -98,7 +99,7 @@ const HeroContent = (props) => {
         transitionDelay="0.5s"
       >
         <img
-          src={muster.src}
+          src={muster2.src}
           color="white"
           backgroundColor="black"
           className={classes.image}

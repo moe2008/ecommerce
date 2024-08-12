@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Image } from "@chakra-ui/react";
-import header from "../../../public/headerbg.jpg";
+import header2 from "../../../BB_Paper_5.jpg"
 import classes from "./Header.module.css";
 import { motion } from "framer-motion";
 const Header = React.forwardRef((props, ref) => {
@@ -13,13 +13,13 @@ const Header = React.forwardRef((props, ref) => {
       position="relative"
       ref={ref}
     >
-      <Image src={header.src} width="100%" height="100%" />
+      <Image src={header2.src} width="100%" height="100%" />
       <motion.div
         animate={{ opacity: [0, 1] }}
         transition={{ duration: 1, delay: 1.4 }} 
       >
         <h1 className={classes.headerText}>
-          Ihr Fachbetrieb für Parkettarbeiten
+          Clean your floors.
         </h1>
       </motion.div>
     </Flex>

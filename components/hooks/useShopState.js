@@ -12,6 +12,7 @@ const useShopState = () => {
     const fetchStatus = async () => {
       try {
         const shopRef = doc(db, "shopstate", "shopState");
+
         const querySnapshot = await getDoc(shopRef);
 
         setIsOnline(querySnapshot.data().online);
@@ -21,7 +22,6 @@ const useShopState = () => {
       }
       setLoading(false);
     };
-
     fetchStatus();
   }, [isOnline]);
 

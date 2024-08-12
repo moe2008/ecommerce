@@ -1,6 +1,4 @@
-const stripe = require("stripe")(
-  "sk_test_51Mdx53CkH5xVlljvvtsSicuuox1kxs5RmX7ugtD2E2tpo5rGyDBvElaR5CYP2421AJXg3MAoXzPZfiZbrRdeuPof00gYFf7iAM"
-);
+const stripe = require("stripe")(process.env.NEXT_PUBLIC_STRIPE_API_KEY);
 
 export default async function handler(req, res) {
   try {

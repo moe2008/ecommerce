@@ -6,7 +6,6 @@ import { useState } from "react";
 import HorizontalList from "../../UI/HorizontalList";
 import HorizontalListItem from "../../UI/HorizontalListItem";
 import referenceArr from "../../../helpers/reference";
-import ad from "../../../public/2.jpg";
 import classes from "./ReferenceSection.module.css";
 import { useInView, useAnimation } from "framer-motion";
 
@@ -93,7 +92,7 @@ const RefrenceSection = React.forwardRef((props, ref) => {
           fontFamily={"open sans"}
           fontWeight={1000}
         >
-          Referenzen
+          Gallery
         </Heading>
       </Flex>
       <Flex

@@ -1,6 +1,4 @@
-const stripe = require("stripe")(
-  "sk_test_51Mdx53CkH5xVlljvvtsSicuuox1kxs5RmX7ugtD2E2tpo5rGyDBvElaR5CYP2421AJXg3MAoXzPZfiZbrRdeuPof00gYFf7iAM"
-);
+const stripe = require("stripe")(process.env.NEXT_PUBLIC_STRIPE_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -11,13 +9,13 @@ export default async function handler(req, res) {
       postData.map((prod) => {
         if (prod.name) {
           items.push({
-            price: "price_1MwRosCkH5xVlljvugaz3LZP",
+            price: "price_1Pn2KvA8r29xHHhPyeN1QO56",
             quantity: prod.quantity,
           });
         }
       });
       items.push({
-        price: "price_1Os7jWCkH5xVlljvGHoZ5uLE",
+        price: "price_1Pn2KvA8r29xHHhPyeN1QO56",
         quantity: 1,
       });
 

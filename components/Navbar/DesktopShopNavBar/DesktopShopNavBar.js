@@ -28,7 +28,7 @@ const DesktopShopNavBar = () => {
       >
         <Image src={logo.src} width="2em" height="2em" alt="Image" />
         <Heading fontSize="md" color="#F3F3F3">
-          Dierker Parkett
+          CleanIT
         </Heading>
       </Flex>
       <Flex width="50%">

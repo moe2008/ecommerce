@@ -1,5 +1,5 @@
 import { Flex, Image, Heading } from "@chakra-ui/react";
-import React, { forwardRef } from "react";
+import React from "react";
 import logo from "../../../public/Logo.png";
 import NavLinks from "./NavLinks";
 import { motion } from "framer-motion";
@@ -49,7 +49,7 @@ const DesktopNavbar = (props) => {
       >
         <Image src={logo.src} width={["2em"]} height="2em" alt="Image" />
         <Heading fontSize="md" color="#f3f3f3" fontFamily={"open sans"}>
-          Dierker Parkett
+          CleanIT
         </Heading>
       </Flex>
       <Flex width="50%">
@@ -90,7 +90,7 @@ const DesktopNavbar = (props) => {
           <motion.div variants={itemVariants}>
             <NavLinks
               fs={["0.5em", "0.5em", "0.65em", "md"]}
-              name="Referenzen"
+              name="Gallery"
               onClickS={props.onClickScroll}
               id={3}
             />
@@ -98,7 +98,7 @@ const DesktopNavbar = (props) => {
           <motion.div variants={itemVariants}>
             <NavLinks
               fs={["0.5em", "0.5em", "0.65em", "md"]}
-              name="Kontakt"
+              name="Contact"
               onClickS={props.onClickScroll}
               id={4}
             />

@@ -7,22 +7,23 @@ import MemberCard from "./MemberCard";
 const TeamSection = React.forwardRef((props, ref) => {
   const members = [
     {
-      name: "Martin Dierker",
-      description: "Parkettlegermeister",
+      name: "Sophia Klein",
+      description: "Store Manager",
     },
     {
-      name: "Nihat Yesilmen",
-      description: "Parkettleger",
+      name: "Lukas Hoffmann",
+      description: "Customer Support Specialist",
     },
     {
-      name: "Moritz Dierker",
-      description: "Aushilfskraft",
+      name: "Emma Schneider",
+      description: "Marketing Coordinator",
     },
     {
-      name: "Andrea Dierker",
-      description: "Buchhaltung",
+      name: "Felix Becker",
+      description: "Warehouse Supervisor",
     },
   ];
+
   return (
     <Flex
       flexDirection="column"
@@ -37,7 +38,7 @@ const TeamSection = React.forwardRef((props, ref) => {
         marginTop="5"
       >
         <Heading color="#F3F3F3" fontSize="3xl" fontFamily={"open sans"}>
-          Unser Team
+          Team
         </Heading>
       </Flex>
       <Flex

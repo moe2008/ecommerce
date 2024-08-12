@@ -1,6 +1,5 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import React from "react";
-import muster from "../../../public/check.png";
 import classes from "./ServiceCard.module.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -25,10 +24,10 @@ const ServiceCard = (props) => {
     <Flex
       direction="column"
       alignItems="center"
-      justifyContent="center"
-      maxHeight="50%"
+      justifyContent="space-between"
+      height="20rem"
       padding="5"
-      maxWidth={["90%", "80%", "80%", "90%"]}
+      maxWidth={["90%", "80%", "30%", "30%"]}
     >
       <Flex
         as={motion.div}
@@ -43,7 +42,7 @@ const ServiceCard = (props) => {
         minHeight="10rem"
         minWidth="8rem"
       >
-        <img src={muster.src} className={classes.image} />
+        <img src={props.img} className={classes.image} />
       </Flex>
       <Flex
         as={motion.div}
@@ -62,9 +61,7 @@ const ServiceCard = (props) => {
           {props.title}
         </Heading>
         <p className={classes.description}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
+          {props.text}
         </p>
       </Flex>
     </Flex>

@@ -63,13 +63,13 @@ const HamburgerMenu = (props) => {
                 id={2}
               />
               <NavLink
-                name="Referenzen"
+                name="Gallery"
                 onClickScroll={props.onClickScroll}
                 onClick={onClose}
                 id={3}
               />
               <NavLink
-                name="Kontakt"
+                name="Contact"
                 onClickScroll={props.onClickScroll}
                 id={4}
                 onClick={onClose}

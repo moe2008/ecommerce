@@ -21,7 +21,7 @@ const Footer = (props) => {
         fontWeight="light"
         color={props.fontColor}
       >
-        Copyright ©Moritz Dierker 2023
+        Copyright ©MODEV 2023
       </Heading>
     </Flex>
   );

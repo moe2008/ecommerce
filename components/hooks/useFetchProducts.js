@@ -25,7 +25,6 @@ const useFetchProducts = (updateKey) => {
         setLoading(false);
       }
     };
-    console.log(products);
     fetchProducts();
   }, [updateKey]);
 
