@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+
+.description {
+  color: #343434;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 30em) {
+  .description {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .description {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .description {
+    font-size: 1em;
+  }
+}
+
+.image {
+  /* height={["100%", "100%", "50%", "50%"]} width={["100%", "100%", "50%", "50%"]} */
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .image {
+    height: 80%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .image {
+    height: 50%;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .image {
+    height: 100%;
+    width: 100%;
+  }
+}

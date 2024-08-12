@@ -1,0 +1,16 @@
+.notFound > h1{
+    font-size: 2rem;
+}
+
+.notFound > p {
+    font-size: 1.2rem;
+}
+
+.notFound > p > a {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.notFound > p > a:hover {
+    font-weight: 700;
+}

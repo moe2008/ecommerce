@@ -1,0 +1,7 @@
+.text {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.scrollWrapper {
+  -webkit-overflow-scrolling: touch;
+}
