@@ -160,7 +160,7 @@ const product = () => {
           )}
         </Flex>
       </Flex>
-      <Info />
+      <Info info={product.info} loading={loading}/>
       <Divider />
       <Tut />
       <Footer bgColor="#343434" fontColor="#F3F3F3" width="100%" />

@@ -1,7 +1,7 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import fIcon from "../../supply-chain.png";
-import pIcon from "../../product.png"
+import pIcon from "../../product.png";
 import {
   TableContainer,
   Table,
@@ -13,14 +13,14 @@ import {
   Tfoot,
 } from "@chakra-ui/react";
 
-const Info = () => {
+const Info = (props) => {
   return (
     <Flex
+      flexDirection={["column", "row"]}
       width="100%"
       justifyContent="space-evenly"
       backgroundColor="#F3F3F3"
       padding="6"
-      
     >
       <Flex
         direction="column"
@@ -49,20 +49,18 @@ const Info = () => {
             <Tbody>
               <Tr>
                 <Td>Hersteller</Td>
-                <Td>Loba</Td>
+                <Td>{!props.info ? "loading" : props.info.Hersteller}</Td>
               </Tr>
               <Tr>
                 <Td>Herstellernummer</Td>
-                <Td>123954329523</Td>
+                <Td>{!props.info ? "loading" : props.info.Herstellernummer}</Td>
               </Tr>
               <Tr>
                 <Td>Menge pro Einheit</Td>
-                <Td>500ml</Td>
+                <Td>{!props.info ? "loading" : props.info.Mengeneinheit}</Td>
               </Tr>
             </Tbody>
-            <Tfoot>
-              
-            </Tfoot>
+            <Tfoot></Tfoot>
           </Table>
         </TableContainer>
       </Flex>
