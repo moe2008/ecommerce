@@ -85,8 +85,10 @@ const HeroContent = (props) => {
             fontFamily={"open sans"}
             _hover={{ backgroundColor: "#DFBF91" }}
             onClick={() => {
-              sendEvent("click", "button", "cta_button", "1"); // Zuerst das Event senden
-              router.push("/shop"); // Dann die Weiterleitung ausführen
+              sendEvent("click", "button", "cta_button", "1"); 
+              setTimeout(() => {
+                router.push("/shop"); 
+              }, 200); 
             }}
           >
             Visit Shop
