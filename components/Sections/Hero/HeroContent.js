@@ -1,17 +1,17 @@
 import { Flex, Heading, Text, Button } from "@chakra-ui/react";
 import React from "react";
-import muster2 from "../../../Bottle7.png"
+import muster2 from "../../../Bottle7.png";
 import classes from "./HeroContent.module.css";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import { sendEvent } from "../../../helpers/analyticsHelper";
 
 import { useRouter } from "next/router";
-
 
 const HeroContent = (props) => {
   const controlsLeft = useAnimation();
   const controlsRight = useAnimation();
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     controlsLeft.start({ opacity: [0, 1], x: [-100, 0] });
@@ -71,7 +71,11 @@ const HeroContent = (props) => {
             marginBottom="5"
             className={classes.text}
           >
-            Keep your floors looking their best with FloorGleam. This versatile cleaner and conditioner is designed for all types of flooring, from hardwood to laminate and tiles. It gently cleans while adding a protective layer that enhances shine and guards against wear and scratches.
+            Keep your floors looking their best with FloorGleam. This versatile
+            cleaner and conditioner is designed for all types of flooring, from
+            hardwood to laminate and tiles. It gently cleans while adding a
+            protective layer that enhances shine and guards against wear and
+            scratches.
           </Text>
           <Button
             marginTop="0.5em"
@@ -80,7 +84,10 @@ const HeroContent = (props) => {
             backgroundColor="#DFBF95"
             fontFamily={"open sans"}
             _hover={{ backgroundColor: "#DFBF91" }}
-            onClick={() => router.push("/shop")}
+            onClick={() => {
+              sendEvent("click", "button", "cta_button", "1"); // Zuerst das Event senden
+              router.push("/shop"); // Dann die Weiterleitung ausführen
+            }}
           >
             Visit Shop
           </Button>
